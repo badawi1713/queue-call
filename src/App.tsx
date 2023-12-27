@@ -79,7 +79,7 @@ const App: React.FC = () => {
             console.log(duration);
             await setTimeout(() => {
               playNext(index + 1);
-            }, duration * 1000 + 150);
+            }, duration * 1000);
           }
         } else {
           setIsPlaying(false);
