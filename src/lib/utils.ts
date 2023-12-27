@@ -37,8 +37,6 @@ const specialTens = [
   "18.wav",
   "19.wav",
 ];
-const hundreds = ["", "ratus.wav"];
-// const thousands = ["", "ribu.wav"];
 
 export const alphabets = Array.from({ length: 26 }, (_, index) =>
   String.fromCharCode("A".charCodeAt(0) + index)
@@ -57,17 +55,81 @@ export const convertNumberToAudioFiles = (number: number): string[] => {
     return ["100.wav"];
   }
 
+  if (number === 200) {
+    return ["200.wav"];
+  }
+
+  if (number === 300) {
+    return ["300.wav"];
+  }
+
+  if (number === 400) {
+    return ["400.wav"];
+  }
+
+  if (number === 500) {
+    return ["500.wav"];
+  }
+
+  if (number === 600) {
+    return ["600.wav"];
+  }
+
+  if (number === 700) {
+    return ["700.wav"];
+  }
+
+  if (number === 800) {
+    return ["800.wav"];
+  }
+
+  if (number === 900) {
+    return ["900.wav"];
+  }
+
   const result = [];
 
-  // >= 200
-  if (number >= 200) {
-    const hundredsDigit = Math.floor(number / 100);
-    result.push(...convertNumberToAudioFiles(hundredsDigit));
-    result.push(...hundreds);
+  // Ratusan
+  if (number >= 900 && number < 1000) {
+    result.push("900.wav");
     number %= 100;
   }
 
-  // > 100 && < 200
+  if (number >= 800 && number < 900) {
+    result.push("800.wav");
+    number %= 100;
+  }
+
+  if (number >= 700 && number < 800) {
+    result.push("700.wav");
+    number %= 100;
+  }
+
+  if (number >= 600 && number < 700) {
+    result.push("600.wav");
+    number %= 100;
+  }
+
+  if (number >= 500 && number < 600) {
+    result.push("500.wav");
+    number %= 100;
+  }
+
+  if (number >= 400 && number < 500) {
+    result.push("400.wav");
+    number %= 100;
+  }
+
+  if (number >= 300 && number < 400) {
+    result.push("300.wav");
+    number %= 100;
+  }
+
+  if (number >= 200 && number < 300) {
+    result.push("200.wav");
+    number %= 100;
+  }
+
   if (number >= 100 && number < 200) {
     result.push("100.wav");
     number %= 100;

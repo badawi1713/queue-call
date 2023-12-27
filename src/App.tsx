@@ -76,7 +76,6 @@ const App: React.FC = () => {
           } catch (error) {
             console.error("Error during audio playback:", error);
           } finally {
-            console.log(duration);
             await setTimeout(() => {
               playNext(index + 1);
             }, duration * 1000);
