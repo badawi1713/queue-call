@@ -43,9 +43,9 @@ const App: React.FC = () => {
     mode: "onChange",
     resolver: zodResolver(formSchema),
     defaultValues: {
-      queue: '1',
+      queue: "1",
       queueType: "A",
-      counter: '1',
+      counter: "1",
     },
   });
 
@@ -72,6 +72,7 @@ const App: React.FC = () => {
           let duration = 0;
           try {
             await audioElement.play();
+            audioElement.playbackRate = 1.1;
             duration = await audioElement.duration;
           } catch (error) {
             console.error("Error during audio playback:", error);
