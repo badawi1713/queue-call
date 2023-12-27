@@ -68,7 +68,7 @@ const App: React.FC = () => {
 
       const playNext = async (index: number) => {
         if (index < audioFiles.length) {
-          audioElement.src = `/src/assets/audio/${audioFiles[index]}`;
+          audioElement.src = `./assets/audio/${audioFiles[index]}`;
           let duration = 0;
           try {
             await audioElement.play();
@@ -140,7 +140,7 @@ const App: React.FC = () => {
             <div className="mx-auto flex items-center flex-col gap-3">
               <div className="animate-spin w-6 h-6">
                 <img
-                  src="/src/assets/images/pokeball.png"
+                  src="./assets/images/pokeball.png"
                   className="w-6 h-6 aspect-square"
                 />
               </div>
