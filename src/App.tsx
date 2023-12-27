@@ -192,6 +192,8 @@ const App: React.FC = () => {
                           {...field}
                           type="number"
                           id="queue"
+                          min={0}
+                          max={999}
                           placeholder="Masukkan no antrian"
                           onChange={(e) => onChange(e.target.value)}
                           value={value}
