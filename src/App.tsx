@@ -55,11 +55,11 @@ const App: React.FC = () => {
       const roomNumber = await convertNumberToAudioFiles(sequence.ruangan);
 
       const audioFiles: string[] = [
-        "in.wav",
-        "antrian.wav",
-        `${sequence.tipe.toLowerCase()}.wav`,
+        "in.mp3",
+        "antrian.mp3",
+        `${sequence.tipe.toLowerCase()}.mp3`,
         ...queueNumber,
-        "counter.wav",
+        "counter.mp3",
         ...roomNumber,
       ];
 

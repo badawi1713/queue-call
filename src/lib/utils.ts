@@ -3,39 +3,39 @@ import { twMerge } from "tailwind-merge";
 
 const units = [
   "",
-  "1.wav",
-  "2.wav",
-  "3.wav",
-  "4.wav",
-  "5.wav",
-  "6.wav",
-  "7.wav",
-  "8.wav",
-  "9.wav",
+  "1.mp3",
+  "2.mp3",
+  "3.mp3",
+  "4.mp3",
+  "5.mp3",
+  "6.mp3",
+  "7.mp3",
+  "8.mp3",
+  "9.mp3",
 ];
 const tens = [
   "",
   "",
-  "20.wav",
-  "30.wav",
-  "40.wav",
-  "50.wav",
-  "60.wav",
-  "70.wav",
-  "80.wav",
-  "90.wav",
+  "20.mp3",
+  "30.mp3",
+  "40.mp3",
+  "50.mp3",
+  "60.mp3",
+  "70.mp3",
+  "80.mp3",
+  "90.mp3",
 ];
 const specialTens = [
-  "10.wav",
-  "11.wav",
-  "12.wav",
-  "13.wav",
-  "14.wav",
-  "15.wav",
-  "16.wav",
-  "17.wav",
-  "18.wav",
-  "19.wav",
+  "10.mp3",
+  "11.mp3",
+  "12.mp3",
+  "13.mp3",
+  "14.mp3",
+  "15.mp3",
+  "16.mp3",
+  "17.mp3",
+  "18.mp3",
+  "19.mp3",
 ];
 
 export const alphabets = Array.from({ length: 26 }, (_, index) =>
@@ -48,90 +48,90 @@ export function cn(...inputs: ClassValue[]) {
 
 export const convertNumberToAudioFiles = (number: number): string[] => {
   if (number === 0) {
-    return ["0.wav"];
+    return ["0.mp3"];
   }
 
   if (number === 100) {
-    return ["100.wav"];
+    return ["100.mp3"];
   }
 
   if (number === 200) {
-    return ["200.wav"];
+    return ["200.mp3"];
   }
 
   if (number === 300) {
-    return ["300.wav"];
+    return ["300.mp3"];
   }
 
   if (number === 400) {
-    return ["400.wav"];
+    return ["400.mp3"];
   }
 
   if (number === 500) {
-    return ["500.wav"];
+    return ["500.mp3"];
   }
 
   if (number === 600) {
-    return ["600.wav"];
+    return ["600.mp3"];
   }
 
   if (number === 700) {
-    return ["700.wav"];
+    return ["700.mp3"];
   }
 
   if (number === 800) {
-    return ["800.wav"];
+    return ["800.mp3"];
   }
 
   if (number === 900) {
-    return ["900.wav"];
+    return ["900.mp3"];
   }
 
   const result = [];
 
   // Ratusan
   if (number >= 900 && number < 1000) {
-    result.push("900.wav");
+    result.push("900.mp3");
     number %= 100;
   }
 
   if (number >= 800 && number < 900) {
-    result.push("800.wav");
+    result.push("800.mp3");
     number %= 100;
   }
 
   if (number >= 700 && number < 800) {
-    result.push("700.wav");
+    result.push("700.mp3");
     number %= 100;
   }
 
   if (number >= 600 && number < 700) {
-    result.push("600.wav");
+    result.push("600.mp3");
     number %= 100;
   }
 
   if (number >= 500 && number < 600) {
-    result.push("500.wav");
+    result.push("500.mp3");
     number %= 100;
   }
 
   if (number >= 400 && number < 500) {
-    result.push("400.wav");
+    result.push("400.mp3");
     number %= 100;
   }
 
   if (number >= 300 && number < 400) {
-    result.push("300.wav");
+    result.push("300.mp3");
     number %= 100;
   }
 
   if (number >= 200 && number < 300) {
-    result.push("200.wav");
+    result.push("200.mp3");
     number %= 100;
   }
 
   if (number >= 100 && number < 200) {
-    result.push("100.wav");
+    result.push("100.mp3");
     number %= 100;
   }
 
